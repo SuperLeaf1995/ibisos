@@ -86,7 +86,7 @@ def compile_linker(source_dir):
             compile_linker(item_path)
         else:
             #The c compile string
-            cpp_compile = "libs/cross-compiler/compiler/bin/i686-elf-gcc"
+            c_compiler = "libs/cross-compiler/compiler/bin/i686-elf-gcc"
             #Check if the given file is a linker file
             if(item_path.endswith(".ld")):
                 #Get the item name
@@ -96,7 +96,7 @@ def compile_linker(source_dir):
                 #Create an output name
                 output_name = "output/%s"%(item_name)
                 #We will link all files
-                os.system("%s -T %s -o %s %s -ffreestanding -O2 -nostdlib -lgcc"%(cpp_compile, item_path, output_name, output))
+                os.system("%s -T %s -o %s %s -ffreestanding -O2 -nostdlib -lgcc"%(c_compiler, item_path, output_name, output))
                 #Compile the goodies
 
 def clear_output(output_dir):
