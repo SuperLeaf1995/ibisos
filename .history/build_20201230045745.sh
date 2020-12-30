@@ -16,7 +16,6 @@ else
 fi
 
 export TARGET_OUTPUT="output/$TARGET_BUILD"
-git pull https://github.com/IbisOS/assets
 cmake `pwd`/src
 make
 
