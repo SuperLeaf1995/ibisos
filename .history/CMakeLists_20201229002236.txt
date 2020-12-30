@@ -1,5 +1,0 @@
-cmake_minimum_required(VERSION 3.17)
-project(IbisOS)
-
-enable_language(CXX)
-enable_language(ASM_NASM)

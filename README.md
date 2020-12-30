@@ -1,4 +1,4 @@
-# This Is Not An Operating System
+# IbisOS
 To build this OS (yes, the name is a joke), run
 `make install` and `make all`
 
