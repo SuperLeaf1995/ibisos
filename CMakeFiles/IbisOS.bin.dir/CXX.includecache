@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/media/Projects/IbisOS/src/memcpy/memcpy.cpp
+memcpy/memcpy.h
+-
+
+/media/Projects/IbisOS/src/memset/memset.cpp
+memset/memset.h
+-
+
+/media/Projects/IbisOS/src/minikernel/minikernel.cpp
+malloc/malloc.h
+-
+
+src/include/malloc/malloc.h
+stddef.h
+-
+
+src/include/memcpy/memcpy.h
+stddef.h
+-
+
+src/include/memset/memset.h
+stddef.h
+-
+
+src/include/stddef.h
+

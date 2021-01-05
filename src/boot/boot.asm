@@ -26,14 +26,16 @@ section .multiboot
 
 section .bss
     align 16
-stack_bottom:
+global memory_stack_bottom:function
+memory_stack_bottom:
     resb 16777216
-stack_top:
+global memory_stack_top:function
+memory_stack_top:
 
 section .text
     global _start:function (_start.end - _start)
     _start:
-        mov esp, stack_top
+        mov esp, memory_stack_top
         push ebx
         extern initiate_mini_kernel
         call initiate_mini_kernel

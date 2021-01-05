@@ -1,6 +1,9 @@
 project(IbisOS)
 cmake_minimum_required(VERSION 3.10)
 
+option(EMULATE "QemuEmulate" OFF)
+
+enable_language(C)
 enable_language(CXX)
 enable_language(ASM_NASM)
 
@@ -12,6 +15,9 @@ set(TARGET_ARCH $ENV{TARGET_ARCH})
 set(TARGET_BUILD $ENV{TARGET_BUILD})
 set(OUTPUT "$ENV{OUTPUT_DIR}/${TARGET_BUILD}")
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${OUTPUT})
+set(CMAKE_C_STANDARD 99)
+set(CMAKE_C_COMPILER "clang")
+set(CMAKE_C_FLAGS "-ffreestanding -O2 -Wall --target=${TARGET_BUILD} -march=${TARGET_ARCH}")
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_COMPILER "clang++")
 set(CMAKE_CXX_FLAGS "-ffreestanding -O2 -Wall -fno-exceptions -fno-rtti -nostdlib -nostdinc --target=${TARGET_BUILD} -march=${TARGET_ARCH}")
