@@ -1,10 +1,12 @@
 #include <malloc/malloc.h>
+//Max memory, self explanatory
+char max_mem[MAX_MEMORY_BLOCK_SIZE];
 //Our free list
-struct mem_block *free_list = (void*) max_mem;
+struct mem_block *free_list = (struct mem_block*) max_mem;
 //Page count
 int page_count = 0;
 //Page
-mem_block block_page[MAX_MEMORY_BLOCK_SIZE];
+struct mem_block block_page[MAX_MEMORY_BLOCK_SIZE];
 //Memory stuff
 char memory[MAX_MEMORY_BLOCK_SIZE];
 
@@ -12,7 +14,7 @@ char memory[MAX_MEMORY_BLOCK_SIZE];
 void __malloc_initialize()
 {
     //Set size of block pages
-    free_list->size - MAX_MEMORY_BLOCK_SIZE - sizeof(struct mem_block);
+    free_list->size = MAX_MEMORY_BLOCK_SIZE - sizeof(struct mem_block);
     //Set free to 1
     free_list->free = 1;
     //Empty out the next block
@@ -23,7 +25,7 @@ void __malloc_initialize()
 void __malloc_split(struct mem_block *block, size_t size)
 {
     //Create a new block
-    struct mem_block *new_block = (void *)((void *) block + size + sizeof(struct mem_block));
+    struct mem_block *new_block = (struct mem_block *)((char *) block + size + sizeof(struct mem_block));
     //Set the size
     new_block->size = (block->size) - size + sizeof(struct mem_block);
     //Set free to 1
@@ -113,7 +115,7 @@ void free(void *ptr)
     if(((void *) memory <= ptr) && (ptr <= (void *)(memory + MAX_MEMORY_BLOCK_SIZE)))
     {
         //Create a current block
-        struct mem_block *current = (mem_block*) ptr;
+        struct mem_block *current = (struct mem_block*) ptr;
         //Remove one from the current block
         --current;
         //Free it up

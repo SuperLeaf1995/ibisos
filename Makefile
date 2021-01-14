@@ -159,6 +159,60 @@ boot/interrupt.asm.o:
 	$(MAKE) -f CMakeFiles/IbisOS.bin.dir/build.make CMakeFiles/IbisOS.bin.dir/boot/interrupt.asm.o
 .PHONY : boot/interrupt.asm.o
 
+devices/pci.o: devices/pci.cpp.o
+
+.PHONY : devices/pci.o
+
+# target to build an object file
+devices/pci.cpp.o:
+	$(MAKE) -f CMakeFiles/IbisOS.bin.dir/build.make CMakeFiles/IbisOS.bin.dir/devices/pci.cpp.o
+.PHONY : devices/pci.cpp.o
+
+devices/pci.i: devices/pci.cpp.i
+
+.PHONY : devices/pci.i
+
+# target to preprocess a source file
+devices/pci.cpp.i:
+	$(MAKE) -f CMakeFiles/IbisOS.bin.dir/build.make CMakeFiles/IbisOS.bin.dir/devices/pci.cpp.i
+.PHONY : devices/pci.cpp.i
+
+devices/pci.s: devices/pci.cpp.s
+
+.PHONY : devices/pci.s
+
+# target to generate assembly for a file
+devices/pci.cpp.s:
+	$(MAKE) -f CMakeFiles/IbisOS.bin.dir/build.make CMakeFiles/IbisOS.bin.dir/devices/pci.cpp.s
+.PHONY : devices/pci.cpp.s
+
+malloc/malloc.o: malloc/malloc.cpp.o
+
+.PHONY : malloc/malloc.o
+
+# target to build an object file
+malloc/malloc.cpp.o:
+	$(MAKE) -f CMakeFiles/IbisOS.bin.dir/build.make CMakeFiles/IbisOS.bin.dir/malloc/malloc.cpp.o
+.PHONY : malloc/malloc.cpp.o
+
+malloc/malloc.i: malloc/malloc.cpp.i
+
+.PHONY : malloc/malloc.i
+
+# target to preprocess a source file
+malloc/malloc.cpp.i:
+	$(MAKE) -f CMakeFiles/IbisOS.bin.dir/build.make CMakeFiles/IbisOS.bin.dir/malloc/malloc.cpp.i
+.PHONY : malloc/malloc.cpp.i
+
+malloc/malloc.s: malloc/malloc.cpp.s
+
+.PHONY : malloc/malloc.s
+
+# target to generate assembly for a file
+malloc/malloc.cpp.s:
+	$(MAKE) -f CMakeFiles/IbisOS.bin.dir/build.make CMakeFiles/IbisOS.bin.dir/malloc/malloc.cpp.s
+.PHONY : malloc/malloc.cpp.s
+
 memcpy/memcpy.o: memcpy/memcpy.cpp.o
 
 .PHONY : memcpy/memcpy.o
@@ -239,6 +293,33 @@ minikernel/minikernel.s: minikernel/minikernel.cpp.s
 minikernel/minikernel.cpp.s:
 	$(MAKE) -f CMakeFiles/IbisOS.bin.dir/build.make CMakeFiles/IbisOS.bin.dir/minikernel/minikernel.cpp.s
 .PHONY : minikernel/minikernel.cpp.s
+
+sys/system.o: sys/system.cpp.o
+
+.PHONY : sys/system.o
+
+# target to build an object file
+sys/system.cpp.o:
+	$(MAKE) -f CMakeFiles/IbisOS.bin.dir/build.make CMakeFiles/IbisOS.bin.dir/sys/system.cpp.o
+.PHONY : sys/system.cpp.o
+
+sys/system.i: sys/system.cpp.i
+
+.PHONY : sys/system.i
+
+# target to preprocess a source file
+sys/system.cpp.i:
+	$(MAKE) -f CMakeFiles/IbisOS.bin.dir/build.make CMakeFiles/IbisOS.bin.dir/sys/system.cpp.i
+.PHONY : sys/system.cpp.i
+
+sys/system.s: sys/system.cpp.s
+
+.PHONY : sys/system.s
+
+# target to generate assembly for a file
+sys/system.cpp.s:
+	$(MAKE) -f CMakeFiles/IbisOS.bin.dir/build.make CMakeFiles/IbisOS.bin.dir/sys/system.cpp.s
+.PHONY : sys/system.cpp.s
 
 tables/gdt.o: tables/gdt.cpp.o
 
@@ -361,6 +442,12 @@ help:
 	@echo "... boot/gdt.o"
 	@echo "... boot/idt.o"
 	@echo "... boot/interrupt.o"
+	@echo "... devices/pci.o"
+	@echo "... devices/pci.i"
+	@echo "... devices/pci.s"
+	@echo "... malloc/malloc.o"
+	@echo "... malloc/malloc.i"
+	@echo "... malloc/malloc.s"
 	@echo "... memcpy/memcpy.o"
 	@echo "... memcpy/memcpy.i"
 	@echo "... memcpy/memcpy.s"
@@ -370,6 +457,9 @@ help:
 	@echo "... minikernel/minikernel.o"
 	@echo "... minikernel/minikernel.i"
 	@echo "... minikernel/minikernel.s"
+	@echo "... sys/system.o"
+	@echo "... sys/system.i"
+	@echo "... sys/system.s"
 	@echo "... tables/gdt.o"
 	@echo "... tables/gdt.i"
 	@echo "... tables/gdt.s"

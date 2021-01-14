@@ -6,6 +6,20 @@
 
 #IncludeRegexTransform: 
 
+/media/Projects/IbisOS/src/devices/pci.cpp
+devices/pci.h
+-
+stdint.h
+-
+stddef.h
+-
+malloc/malloc.h
+-
+
+/media/Projects/IbisOS/src/malloc/malloc.cpp
+malloc/malloc.h
+-
+
 /media/Projects/IbisOS/src/memcpy/memcpy.cpp
 memcpy/memcpy.h
 -
@@ -20,6 +34,12 @@ malloc/malloc.h
 system.h
 -
 vesa/vesa.h
+-
+devices/pci.h
+-
+
+/media/Projects/IbisOS/src/sys/system.cpp
+sys/system.h
 -
 
 /media/Projects/IbisOS/src/tables/gdt.cpp
@@ -42,6 +62,10 @@ tables/isr.h
 vesa/vesa.h
 -
 
+src/include/devices/pci.h
+sys/system.h
+-
+
 src/include/malloc/malloc.h
 stddef.h
 -
@@ -57,6 +81,10 @@ stddef.h
 src/include/stddef.h
 
 src/include/stdint.h
+
+src/include/sys/system.h
+stdint.h
+-
 
 src/include/system.h
 tables/gdt.h

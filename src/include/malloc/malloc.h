@@ -3,8 +3,6 @@
 
 #include <stddef.h>
 #define MAX_MEMORY_BLOCK_SIZE 20000
-//Max memory, self explanatory
-char max_mem[MAX_MEMORY_BLOCK_SIZE];
 struct mem_block
 {
     //Size allocated
