@@ -2,6 +2,7 @@
 #include <system.h>
 #include <vesa/vesa.h>
 #include <devices/pci.h>
+#include <sys/portio.hpp>
 extern "C" void initiate_mini_kernel(unsigned int *multiboot_struct);
 void initiate_mini_kernel(unsigned int *multiboot_struct)
 {
@@ -13,4 +14,5 @@ void initiate_mini_kernel(unsigned int *multiboot_struct)
     init_vesa(multiboot_struct);
     //Initialize all PCI devices
     initialize_pci_devices();
+    outb(0x10, 0x00);
 }

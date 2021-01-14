@@ -8,16 +8,16 @@ file(REMOVE_RECURSE
   "CMakeFiles/IbisOS.bin.dir/memcpy/memcpy.cpp.o"
   "CMakeFiles/IbisOS.bin.dir/memset/memset.cpp.o"
   "CMakeFiles/IbisOS.bin.dir/minikernel/minikernel.cpp.o"
-  "CMakeFiles/IbisOS.bin.dir/sys/system.cpp.o"
+  "CMakeFiles/IbisOS.bin.dir/sys/portio.c.o"
   "CMakeFiles/IbisOS.bin.dir/tables/gdt.cpp.o"
   "CMakeFiles/IbisOS.bin.dir/tables/idt.cpp.o"
   "CMakeFiles/IbisOS.bin.dir/tables/isr.cpp.o"
   "CMakeFiles/IbisOS.bin.dir/vesa/vesa.cpp.o"
-  "output/i686-pc-none-elf/IbisOS.bin"
-  "output/i686-pc-none-elf/IbisOS.bin.pdb"
+  "output/i386-pc-none-elf/IbisOS.bin"
+  "output/i386-pc-none-elf/IbisOS.bin.pdb"
 )
 
 # Per-language clean rules from dependency scanning.
-foreach(lang ASM_NASM CXX)
+foreach(lang ASM_NASM C CXX)
   include(CMakeFiles/IbisOS.bin.dir/cmake_clean_${lang}.cmake OPTIONAL)
 endforeach()

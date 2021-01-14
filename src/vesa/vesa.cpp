@@ -1,6 +1,8 @@
 #include <vesa/vesa.h>
 struct vesa_mode_info vesa_mode[1];
-
+extern "C" char _binary_assets_wallpaper_start;
+extern "C" char _binary_assets_wallpaper_end;
+extern "C" char _binary_assets_wallpaper_size;
 void draw_pixel(uint32_t *framebuffer, int x, int y, uint32_t color)
 {
     unsigned index = x * 3 + y * 3200;

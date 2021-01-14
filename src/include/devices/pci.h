@@ -1,10 +1,12 @@
 #ifndef PCI_H
 #define PCI_H
-#include <sys/system.h>
+#include <sys/portio.hpp>
 typedef struct
 {
     uint16_t vendor, device;
     int driver;
+    uint32_t status, command;
+    uint16_t bar0, bar1, bar2, bar3, bar4, bar5;
 } pci_device;
 
 void register_pci_device(pci_device* device);

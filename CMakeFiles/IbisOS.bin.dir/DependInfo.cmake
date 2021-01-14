@@ -1,6 +1,7 @@
 # The set of languages for which implicit dependencies are needed:
 set(CMAKE_DEPENDS_LANGUAGES
   "ASM_NASM"
+  "C"
   "CXX"
   )
 # The set of files for implicit dependencies of each language:
@@ -16,13 +17,21 @@ set(CMAKE_ASM_NASM_COMPILER_ID "NASM")
 set(CMAKE_ASM_NASM_TARGET_INCLUDE_PATH
   "src/include"
   )
+set(CMAKE_DEPENDS_CHECK_C
+  "/media/Projects/IbisOS/src/sys/portio.c" "/media/Projects/IbisOS/CMakeFiles/IbisOS.bin.dir/sys/portio.c.o"
+  )
+set(CMAKE_C_COMPILER_ID "GNU")
+
+# The include file search paths:
+set(CMAKE_C_TARGET_INCLUDE_PATH
+  "src/include"
+  )
 set(CMAKE_DEPENDS_CHECK_CXX
   "/media/Projects/IbisOS/src/devices/pci.cpp" "/media/Projects/IbisOS/CMakeFiles/IbisOS.bin.dir/devices/pci.cpp.o"
   "/media/Projects/IbisOS/src/malloc/malloc.cpp" "/media/Projects/IbisOS/CMakeFiles/IbisOS.bin.dir/malloc/malloc.cpp.o"
   "/media/Projects/IbisOS/src/memcpy/memcpy.cpp" "/media/Projects/IbisOS/CMakeFiles/IbisOS.bin.dir/memcpy/memcpy.cpp.o"
   "/media/Projects/IbisOS/src/memset/memset.cpp" "/media/Projects/IbisOS/CMakeFiles/IbisOS.bin.dir/memset/memset.cpp.o"
   "/media/Projects/IbisOS/src/minikernel/minikernel.cpp" "/media/Projects/IbisOS/CMakeFiles/IbisOS.bin.dir/minikernel/minikernel.cpp.o"
-  "/media/Projects/IbisOS/src/sys/system.cpp" "/media/Projects/IbisOS/CMakeFiles/IbisOS.bin.dir/sys/system.cpp.o"
   "/media/Projects/IbisOS/src/tables/gdt.cpp" "/media/Projects/IbisOS/CMakeFiles/IbisOS.bin.dir/tables/gdt.cpp.o"
   "/media/Projects/IbisOS/src/tables/idt.cpp" "/media/Projects/IbisOS/CMakeFiles/IbisOS.bin.dir/tables/idt.cpp.o"
   "/media/Projects/IbisOS/src/tables/isr.cpp" "/media/Projects/IbisOS/CMakeFiles/IbisOS.bin.dir/tables/isr.cpp.o"

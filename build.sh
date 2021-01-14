@@ -3,20 +3,22 @@ rm -rf CMakeCache.txt CMakeFiles
 export OUTPUT_DIR=`pwd`/output
 if [ "$1" == "" ]
 then
-    export TARGET_BUILD="i686-pc-none-elf"
+    export TARGET_BUILD="i386-pc-none-elf"
 else
     export TARGET_BUILD="$1"
 fi
 
 if [ "$1" == "" ]
 then
-    export TARGET_ARCH="i686"
+    export TARGET_ARCH="i386"
 else
     export TARGET_ARCH="$1"
 fi
 
 export TARGET_OUTPUT="output/$TARGET_BUILD"
-git pull https://github.com/IbisOS/assets assets
+git pull https://github.com/IbisOS/assets
+mkdir -p output
+objcopy -O $TARGET_BUILD -B $TARGET_ARCH -I binary assets/wallpaper.jpg output/wallpaper.o
 cmake `pwd`/src
 make
 

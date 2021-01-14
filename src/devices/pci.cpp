@@ -2,6 +2,7 @@
 #include <stdint.h>
 #include <stddef.h>
 #include <malloc/malloc.h>
+#include <sys/portio.hpp>
 //A list of all discovered pci devices
 pci_device **discovered_devices;
 uint32_t discovered_device_count = 0;

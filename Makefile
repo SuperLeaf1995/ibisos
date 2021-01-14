@@ -294,32 +294,32 @@ minikernel/minikernel.cpp.s:
 	$(MAKE) -f CMakeFiles/IbisOS.bin.dir/build.make CMakeFiles/IbisOS.bin.dir/minikernel/minikernel.cpp.s
 .PHONY : minikernel/minikernel.cpp.s
 
-sys/system.o: sys/system.cpp.o
+sys/portio.o: sys/portio.c.o
 
-.PHONY : sys/system.o
+.PHONY : sys/portio.o
 
 # target to build an object file
-sys/system.cpp.o:
-	$(MAKE) -f CMakeFiles/IbisOS.bin.dir/build.make CMakeFiles/IbisOS.bin.dir/sys/system.cpp.o
-.PHONY : sys/system.cpp.o
+sys/portio.c.o:
+	$(MAKE) -f CMakeFiles/IbisOS.bin.dir/build.make CMakeFiles/IbisOS.bin.dir/sys/portio.c.o
+.PHONY : sys/portio.c.o
 
-sys/system.i: sys/system.cpp.i
+sys/portio.i: sys/portio.c.i
 
-.PHONY : sys/system.i
+.PHONY : sys/portio.i
 
 # target to preprocess a source file
-sys/system.cpp.i:
-	$(MAKE) -f CMakeFiles/IbisOS.bin.dir/build.make CMakeFiles/IbisOS.bin.dir/sys/system.cpp.i
-.PHONY : sys/system.cpp.i
+sys/portio.c.i:
+	$(MAKE) -f CMakeFiles/IbisOS.bin.dir/build.make CMakeFiles/IbisOS.bin.dir/sys/portio.c.i
+.PHONY : sys/portio.c.i
 
-sys/system.s: sys/system.cpp.s
+sys/portio.s: sys/portio.c.s
 
-.PHONY : sys/system.s
+.PHONY : sys/portio.s
 
 # target to generate assembly for a file
-sys/system.cpp.s:
-	$(MAKE) -f CMakeFiles/IbisOS.bin.dir/build.make CMakeFiles/IbisOS.bin.dir/sys/system.cpp.s
-.PHONY : sys/system.cpp.s
+sys/portio.c.s:
+	$(MAKE) -f CMakeFiles/IbisOS.bin.dir/build.make CMakeFiles/IbisOS.bin.dir/sys/portio.c.s
+.PHONY : sys/portio.c.s
 
 tables/gdt.o: tables/gdt.cpp.o
 
@@ -457,9 +457,9 @@ help:
 	@echo "... minikernel/minikernel.o"
 	@echo "... minikernel/minikernel.i"
 	@echo "... minikernel/minikernel.s"
-	@echo "... sys/system.o"
-	@echo "... sys/system.i"
-	@echo "... sys/system.s"
+	@echo "... sys/portio.o"
+	@echo "... sys/portio.i"
+	@echo "... sys/portio.s"
 	@echo "... tables/gdt.o"
 	@echo "... tables/gdt.i"
 	@echo "... tables/gdt.s"
