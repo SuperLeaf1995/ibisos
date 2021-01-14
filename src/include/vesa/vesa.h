@@ -9,5 +9,6 @@ struct vesa_mode_info
     uint16_t pitch;
     uint16_t bpp;
 } __attribute__((packed));
+void draw_pixel(uint32_t *framebuffer, int x, int y, uint32_t color);
 void init_vesa(unsigned int *multiboot_struct);
 #endif
