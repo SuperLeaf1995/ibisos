@@ -27,7 +27,7 @@ void init_vesa(unsigned int* multiboot_header)
         for(int x = 0; x < vesa_mode[0].width; x++)
         {
             //Draw a pixel
-            draw_pixel(vesa_mode[0].framebuffer, x, y, 0xff0000);
+            draw_pixel(vesa_mode[0].framebuffer, x, y, 0x093951);
         }
     }
 }

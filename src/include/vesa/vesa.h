@@ -9,6 +9,5 @@ struct vesa_mode_info
     uint16_t pitch;
     uint16_t bpp;
 } __attribute__((packed));
-
 void init_vesa(unsigned int *multiboot_struct);
 #endif
