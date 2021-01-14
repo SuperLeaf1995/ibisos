@@ -13,9 +13,11 @@ CMakeFiles/IbisOS.bin.dir/minikernel/minikernel.cpp.o
  /media/Projects/IbisOS/src/minikernel/minikernel.cpp
  src/include/malloc/malloc.h
  src/include/stddef.h
+ src/include/stdint.h
  src/include/system.h
  src/include/tables/gdt.h
  src/include/tables/idt.h
+ src/include/vesa/vesa.h
 CMakeFiles/IbisOS.bin.dir/tables/gdt.cpp.o
  /media/Projects/IbisOS/src/tables/gdt.cpp
  src/include/memset/memset.h
@@ -29,3 +31,7 @@ CMakeFiles/IbisOS.bin.dir/tables/idt.cpp.o
 CMakeFiles/IbisOS.bin.dir/tables/isr.cpp.o
  /media/Projects/IbisOS/src/tables/isr.cpp
  src/include/tables/isr.h
+CMakeFiles/IbisOS.bin.dir/vesa/vesa.cpp.o
+ /media/Projects/IbisOS/src/vesa/vesa.cpp
+ src/include/stdint.h
+ src/include/vesa/vesa.h

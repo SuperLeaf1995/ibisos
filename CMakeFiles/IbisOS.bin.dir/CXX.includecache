@@ -19,6 +19,8 @@ malloc/malloc.h
 -
 system.h
 -
+vesa/vesa.h
+-
 
 /media/Projects/IbisOS/src/tables/gdt.cpp
 tables/gdt.h
@@ -36,6 +38,10 @@ memset/memset.h
 tables/isr.h
 -
 
+/media/Projects/IbisOS/src/vesa/vesa.cpp
+vesa/vesa.h
+-
+
 src/include/malloc/malloc.h
 stddef.h
 -
@@ -50,6 +56,8 @@ stddef.h
 
 src/include/stddef.h
 
+src/include/stdint.h
+
 src/include/system.h
 tables/gdt.h
 -
@@ -61,4 +69,8 @@ src/include/tables/gdt.h
 src/include/tables/idt.h
 
 src/include/tables/isr.h
+
+src/include/vesa/vesa.h
+stdint.h
+-
 

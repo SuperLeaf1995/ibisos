@@ -9,6 +9,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/IbisOS.bin.dir/tables/gdt.cpp.o"
   "CMakeFiles/IbisOS.bin.dir/tables/idt.cpp.o"
   "CMakeFiles/IbisOS.bin.dir/tables/isr.cpp.o"
+  "CMakeFiles/IbisOS.bin.dir/vesa/vesa.cpp.o"
   "output/i686-pc-none-elf/IbisOS.bin"
   "output/i686-pc-none-elf/IbisOS.bin.pdb"
 )

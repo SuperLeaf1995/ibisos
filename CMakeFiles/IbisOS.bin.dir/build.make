@@ -135,24 +135,37 @@ CMakeFiles/IbisOS.bin.dir/tables/isr.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/IbisOS.bin.dir/tables/isr.cpp.s"
 	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/Projects/IbisOS/src/tables/isr.cpp -o CMakeFiles/IbisOS.bin.dir/tables/isr.cpp.s
 
+CMakeFiles/IbisOS.bin.dir/vesa/vesa.cpp.o: CMakeFiles/IbisOS.bin.dir/flags.make
+CMakeFiles/IbisOS.bin.dir/vesa/vesa.cpp.o: src/vesa/vesa.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/Projects/IbisOS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/IbisOS.bin.dir/vesa/vesa.cpp.o"
+	clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/IbisOS.bin.dir/vesa/vesa.cpp.o -c /media/Projects/IbisOS/src/vesa/vesa.cpp
+
+CMakeFiles/IbisOS.bin.dir/vesa/vesa.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/IbisOS.bin.dir/vesa/vesa.cpp.i"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/Projects/IbisOS/src/vesa/vesa.cpp > CMakeFiles/IbisOS.bin.dir/vesa/vesa.cpp.i
+
+CMakeFiles/IbisOS.bin.dir/vesa/vesa.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/IbisOS.bin.dir/vesa/vesa.cpp.s"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/Projects/IbisOS/src/vesa/vesa.cpp -o CMakeFiles/IbisOS.bin.dir/vesa/vesa.cpp.s
+
 CMakeFiles/IbisOS.bin.dir/boot/boot.asm.o: CMakeFiles/IbisOS.bin.dir/flags.make
 CMakeFiles/IbisOS.bin.dir/boot/boot.asm.o: src/boot/boot.asm
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/Projects/IbisOS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building ASM_NASM object CMakeFiles/IbisOS.bin.dir/boot/boot.asm.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/Projects/IbisOS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building ASM_NASM object CMakeFiles/IbisOS.bin.dir/boot/boot.asm.o"
 	/usr/bin/nasm -f elf32 -o CMakeFiles/IbisOS.bin.dir/boot/boot.asm.o /media/Projects/IbisOS/src/boot/boot.asm
 
 CMakeFiles/IbisOS.bin.dir/boot/gdt.asm.o: CMakeFiles/IbisOS.bin.dir/flags.make
 CMakeFiles/IbisOS.bin.dir/boot/gdt.asm.o: src/boot/gdt.asm
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/Projects/IbisOS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building ASM_NASM object CMakeFiles/IbisOS.bin.dir/boot/gdt.asm.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/Projects/IbisOS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building ASM_NASM object CMakeFiles/IbisOS.bin.dir/boot/gdt.asm.o"
 	/usr/bin/nasm -f elf32 -o CMakeFiles/IbisOS.bin.dir/boot/gdt.asm.o /media/Projects/IbisOS/src/boot/gdt.asm
 
 CMakeFiles/IbisOS.bin.dir/boot/idt.asm.o: CMakeFiles/IbisOS.bin.dir/flags.make
 CMakeFiles/IbisOS.bin.dir/boot/idt.asm.o: src/boot/idt.asm
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/Projects/IbisOS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building ASM_NASM object CMakeFiles/IbisOS.bin.dir/boot/idt.asm.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/Projects/IbisOS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building ASM_NASM object CMakeFiles/IbisOS.bin.dir/boot/idt.asm.o"
 	/usr/bin/nasm -f elf32 -o CMakeFiles/IbisOS.bin.dir/boot/idt.asm.o /media/Projects/IbisOS/src/boot/idt.asm
 
 CMakeFiles/IbisOS.bin.dir/boot/interrupt.asm.o: CMakeFiles/IbisOS.bin.dir/flags.make
 CMakeFiles/IbisOS.bin.dir/boot/interrupt.asm.o: src/boot/interrupt.asm
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/Projects/IbisOS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building ASM_NASM object CMakeFiles/IbisOS.bin.dir/boot/interrupt.asm.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/Projects/IbisOS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building ASM_NASM object CMakeFiles/IbisOS.bin.dir/boot/interrupt.asm.o"
 	/usr/bin/nasm -f elf32 -o CMakeFiles/IbisOS.bin.dir/boot/interrupt.asm.o /media/Projects/IbisOS/src/boot/interrupt.asm
 
 # Object files for target IbisOS.bin
@@ -163,6 +176,7 @@ IbisOS_bin_OBJECTS = \
 "CMakeFiles/IbisOS.bin.dir/tables/gdt.cpp.o" \
 "CMakeFiles/IbisOS.bin.dir/tables/idt.cpp.o" \
 "CMakeFiles/IbisOS.bin.dir/tables/isr.cpp.o" \
+"CMakeFiles/IbisOS.bin.dir/vesa/vesa.cpp.o" \
 "CMakeFiles/IbisOS.bin.dir/boot/boot.asm.o" \
 "CMakeFiles/IbisOS.bin.dir/boot/gdt.asm.o" \
 "CMakeFiles/IbisOS.bin.dir/boot/idt.asm.o" \
@@ -177,13 +191,14 @@ output/i686-pc-none-elf/IbisOS.bin: CMakeFiles/IbisOS.bin.dir/minikernel/miniker
 output/i686-pc-none-elf/IbisOS.bin: CMakeFiles/IbisOS.bin.dir/tables/gdt.cpp.o
 output/i686-pc-none-elf/IbisOS.bin: CMakeFiles/IbisOS.bin.dir/tables/idt.cpp.o
 output/i686-pc-none-elf/IbisOS.bin: CMakeFiles/IbisOS.bin.dir/tables/isr.cpp.o
+output/i686-pc-none-elf/IbisOS.bin: CMakeFiles/IbisOS.bin.dir/vesa/vesa.cpp.o
 output/i686-pc-none-elf/IbisOS.bin: CMakeFiles/IbisOS.bin.dir/boot/boot.asm.o
 output/i686-pc-none-elf/IbisOS.bin: CMakeFiles/IbisOS.bin.dir/boot/gdt.asm.o
 output/i686-pc-none-elf/IbisOS.bin: CMakeFiles/IbisOS.bin.dir/boot/idt.asm.o
 output/i686-pc-none-elf/IbisOS.bin: CMakeFiles/IbisOS.bin.dir/boot/interrupt.asm.o
 output/i686-pc-none-elf/IbisOS.bin: CMakeFiles/IbisOS.bin.dir/build.make
 output/i686-pc-none-elf/IbisOS.bin: CMakeFiles/IbisOS.bin.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/media/Projects/IbisOS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable output/i686-pc-none-elf/IbisOS.bin"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/media/Projects/IbisOS/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable output/i686-pc-none-elf/IbisOS.bin"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/IbisOS.bin.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

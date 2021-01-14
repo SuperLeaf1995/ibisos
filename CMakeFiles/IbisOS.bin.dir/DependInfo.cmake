@@ -23,6 +23,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/media/Projects/IbisOS/src/tables/gdt.cpp" "/media/Projects/IbisOS/CMakeFiles/IbisOS.bin.dir/tables/gdt.cpp.o"
   "/media/Projects/IbisOS/src/tables/idt.cpp" "/media/Projects/IbisOS/CMakeFiles/IbisOS.bin.dir/tables/idt.cpp.o"
   "/media/Projects/IbisOS/src/tables/isr.cpp" "/media/Projects/IbisOS/CMakeFiles/IbisOS.bin.dir/tables/isr.cpp.o"
+  "/media/Projects/IbisOS/src/vesa/vesa.cpp" "/media/Projects/IbisOS/CMakeFiles/IbisOS.bin.dir/vesa/vesa.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

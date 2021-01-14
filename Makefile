@@ -321,6 +321,33 @@ tables/isr.cpp.s:
 	$(MAKE) -f CMakeFiles/IbisOS.bin.dir/build.make CMakeFiles/IbisOS.bin.dir/tables/isr.cpp.s
 .PHONY : tables/isr.cpp.s
 
+vesa/vesa.o: vesa/vesa.cpp.o
+
+.PHONY : vesa/vesa.o
+
+# target to build an object file
+vesa/vesa.cpp.o:
+	$(MAKE) -f CMakeFiles/IbisOS.bin.dir/build.make CMakeFiles/IbisOS.bin.dir/vesa/vesa.cpp.o
+.PHONY : vesa/vesa.cpp.o
+
+vesa/vesa.i: vesa/vesa.cpp.i
+
+.PHONY : vesa/vesa.i
+
+# target to preprocess a source file
+vesa/vesa.cpp.i:
+	$(MAKE) -f CMakeFiles/IbisOS.bin.dir/build.make CMakeFiles/IbisOS.bin.dir/vesa/vesa.cpp.i
+.PHONY : vesa/vesa.cpp.i
+
+vesa/vesa.s: vesa/vesa.cpp.s
+
+.PHONY : vesa/vesa.s
+
+# target to generate assembly for a file
+vesa/vesa.cpp.s:
+	$(MAKE) -f CMakeFiles/IbisOS.bin.dir/build.make CMakeFiles/IbisOS.bin.dir/vesa/vesa.cpp.s
+.PHONY : vesa/vesa.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -352,6 +379,9 @@ help:
 	@echo "... tables/isr.o"
 	@echo "... tables/isr.i"
 	@echo "... tables/isr.s"
+	@echo "... vesa/vesa.o"
+	@echo "... vesa/vesa.i"
+	@echo "... vesa/vesa.s"
 .PHONY : help
 
 

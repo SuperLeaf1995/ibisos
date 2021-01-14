@@ -36,15 +36,19 @@ memory_stack_top:
 section .text
     global _start:function (_start.end - _start)
     _start:
+        ;Move esp register to top of memory stack
         mov esp, memory_stack_top
         push ebx
+        ;Enter protected mode
         cli
         extern gdtp
+        ;Load the global descriptor table
         lgdt [gdtp]
         mov eax, cr0
         or al, 1
         mov cr0, eax
         extern initiate_mini_kernel
+        ;Start the mini kernel
         call initiate_mini_kernel
         cli
         hlt

@@ -12,9 +12,11 @@ CMakeFiles/IbisOS.bin.dir/memset/memset.cpp.o: src/include/stddef.h
 CMakeFiles/IbisOS.bin.dir/minikernel/minikernel.cpp.o: src/minikernel/minikernel.cpp
 CMakeFiles/IbisOS.bin.dir/minikernel/minikernel.cpp.o: src/include/malloc/malloc.h
 CMakeFiles/IbisOS.bin.dir/minikernel/minikernel.cpp.o: src/include/stddef.h
+CMakeFiles/IbisOS.bin.dir/minikernel/minikernel.cpp.o: src/include/stdint.h
 CMakeFiles/IbisOS.bin.dir/minikernel/minikernel.cpp.o: src/include/system.h
 CMakeFiles/IbisOS.bin.dir/minikernel/minikernel.cpp.o: src/include/tables/gdt.h
 CMakeFiles/IbisOS.bin.dir/minikernel/minikernel.cpp.o: src/include/tables/idt.h
+CMakeFiles/IbisOS.bin.dir/minikernel/minikernel.cpp.o: src/include/vesa/vesa.h
 
 CMakeFiles/IbisOS.bin.dir/tables/gdt.cpp.o: src/tables/gdt.cpp
 CMakeFiles/IbisOS.bin.dir/tables/gdt.cpp.o: src/include/memset/memset.h
@@ -28,4 +30,8 @@ CMakeFiles/IbisOS.bin.dir/tables/idt.cpp.o: src/include/tables/idt.h
 
 CMakeFiles/IbisOS.bin.dir/tables/isr.cpp.o: src/tables/isr.cpp
 CMakeFiles/IbisOS.bin.dir/tables/isr.cpp.o: src/include/tables/isr.h
+
+CMakeFiles/IbisOS.bin.dir/vesa/vesa.cpp.o: src/vesa/vesa.cpp
+CMakeFiles/IbisOS.bin.dir/vesa/vesa.cpp.o: src/include/stdint.h
+CMakeFiles/IbisOS.bin.dir/vesa/vesa.cpp.o: src/include/vesa/vesa.h
 
