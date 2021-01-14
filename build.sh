@@ -18,7 +18,6 @@ fi
 export TARGET_OUTPUT="output/$TARGET_BUILD"
 git pull https://github.com/IbisOS/assets
 mkdir -p output
-objcopy -O $TARGET_BUILD -B $TARGET_ARCH -I binary assets/wallpaper.jpg output/wallpaper.o
 cmake `pwd`/src
 make
 
