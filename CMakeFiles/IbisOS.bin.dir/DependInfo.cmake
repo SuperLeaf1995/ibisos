@@ -6,6 +6,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_ASM_NASM
   "/media/Projects/IbisOS/src/boot/boot.asm" "/media/Projects/IbisOS/CMakeFiles/IbisOS.bin.dir/boot/boot.asm.o"
+  "/media/Projects/IbisOS/src/boot/gdt.asm" "/media/Projects/IbisOS/CMakeFiles/IbisOS.bin.dir/boot/gdt.asm.o"
+  "/media/Projects/IbisOS/src/boot/idt.asm" "/media/Projects/IbisOS/CMakeFiles/IbisOS.bin.dir/boot/idt.asm.o"
+  "/media/Projects/IbisOS/src/boot/interrupt.asm" "/media/Projects/IbisOS/CMakeFiles/IbisOS.bin.dir/boot/interrupt.asm.o"
   )
 set(CMAKE_ASM_NASM_COMPILER_ID "NASM")
 
@@ -17,6 +20,9 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/media/Projects/IbisOS/src/memcpy/memcpy.cpp" "/media/Projects/IbisOS/CMakeFiles/IbisOS.bin.dir/memcpy/memcpy.cpp.o"
   "/media/Projects/IbisOS/src/memset/memset.cpp" "/media/Projects/IbisOS/CMakeFiles/IbisOS.bin.dir/memset/memset.cpp.o"
   "/media/Projects/IbisOS/src/minikernel/minikernel.cpp" "/media/Projects/IbisOS/CMakeFiles/IbisOS.bin.dir/minikernel/minikernel.cpp.o"
+  "/media/Projects/IbisOS/src/tables/gdt.cpp" "/media/Projects/IbisOS/CMakeFiles/IbisOS.bin.dir/tables/gdt.cpp.o"
+  "/media/Projects/IbisOS/src/tables/idt.cpp" "/media/Projects/IbisOS/CMakeFiles/IbisOS.bin.dir/tables/idt.cpp.o"
+  "/media/Projects/IbisOS/src/tables/isr.cpp" "/media/Projects/IbisOS/CMakeFiles/IbisOS.bin.dir/tables/isr.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

@@ -24,6 +24,7 @@ section .multiboot
     dd HEIGHT
     dd BPP
 
+
 section .bss
     align 16
 global memory_stack_bottom:function
@@ -37,6 +38,12 @@ section .text
     _start:
         mov esp, memory_stack_top
         push ebx
+        cli
+        extern gdtp
+        lgdt [gdtp]
+        mov eax, cr0
+        or al, 1
+        mov cr0, eax
         extern initiate_mini_kernel
         call initiate_mini_kernel
         cli

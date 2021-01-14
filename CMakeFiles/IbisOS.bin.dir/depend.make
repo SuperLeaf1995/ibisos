@@ -12,4 +12,20 @@ CMakeFiles/IbisOS.bin.dir/memset/memset.cpp.o: src/include/stddef.h
 CMakeFiles/IbisOS.bin.dir/minikernel/minikernel.cpp.o: src/minikernel/minikernel.cpp
 CMakeFiles/IbisOS.bin.dir/minikernel/minikernel.cpp.o: src/include/malloc/malloc.h
 CMakeFiles/IbisOS.bin.dir/minikernel/minikernel.cpp.o: src/include/stddef.h
+CMakeFiles/IbisOS.bin.dir/minikernel/minikernel.cpp.o: src/include/system.h
+CMakeFiles/IbisOS.bin.dir/minikernel/minikernel.cpp.o: src/include/tables/gdt.h
+CMakeFiles/IbisOS.bin.dir/minikernel/minikernel.cpp.o: src/include/tables/idt.h
+
+CMakeFiles/IbisOS.bin.dir/tables/gdt.cpp.o: src/tables/gdt.cpp
+CMakeFiles/IbisOS.bin.dir/tables/gdt.cpp.o: src/include/memset/memset.h
+CMakeFiles/IbisOS.bin.dir/tables/gdt.cpp.o: src/include/stddef.h
+CMakeFiles/IbisOS.bin.dir/tables/gdt.cpp.o: src/include/tables/gdt.h
+
+CMakeFiles/IbisOS.bin.dir/tables/idt.cpp.o: src/tables/idt.cpp
+CMakeFiles/IbisOS.bin.dir/tables/idt.cpp.o: src/include/memset/memset.h
+CMakeFiles/IbisOS.bin.dir/tables/idt.cpp.o: src/include/stddef.h
+CMakeFiles/IbisOS.bin.dir/tables/idt.cpp.o: src/include/tables/idt.h
+
+CMakeFiles/IbisOS.bin.dir/tables/isr.cpp.o: src/tables/isr.cpp
+CMakeFiles/IbisOS.bin.dir/tables/isr.cpp.o: src/include/tables/isr.h
 

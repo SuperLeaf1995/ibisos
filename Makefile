@@ -132,6 +132,33 @@ boot/boot.asm.o:
 	$(MAKE) -f CMakeFiles/IbisOS.bin.dir/build.make CMakeFiles/IbisOS.bin.dir/boot/boot.asm.o
 .PHONY : boot/boot.asm.o
 
+boot/gdt.o: boot/gdt.asm.o
+
+.PHONY : boot/gdt.o
+
+# target to build an object file
+boot/gdt.asm.o:
+	$(MAKE) -f CMakeFiles/IbisOS.bin.dir/build.make CMakeFiles/IbisOS.bin.dir/boot/gdt.asm.o
+.PHONY : boot/gdt.asm.o
+
+boot/idt.o: boot/idt.asm.o
+
+.PHONY : boot/idt.o
+
+# target to build an object file
+boot/idt.asm.o:
+	$(MAKE) -f CMakeFiles/IbisOS.bin.dir/build.make CMakeFiles/IbisOS.bin.dir/boot/idt.asm.o
+.PHONY : boot/idt.asm.o
+
+boot/interrupt.o: boot/interrupt.asm.o
+
+.PHONY : boot/interrupt.o
+
+# target to build an object file
+boot/interrupt.asm.o:
+	$(MAKE) -f CMakeFiles/IbisOS.bin.dir/build.make CMakeFiles/IbisOS.bin.dir/boot/interrupt.asm.o
+.PHONY : boot/interrupt.asm.o
+
 memcpy/memcpy.o: memcpy/memcpy.cpp.o
 
 .PHONY : memcpy/memcpy.o
@@ -213,6 +240,87 @@ minikernel/minikernel.cpp.s:
 	$(MAKE) -f CMakeFiles/IbisOS.bin.dir/build.make CMakeFiles/IbisOS.bin.dir/minikernel/minikernel.cpp.s
 .PHONY : minikernel/minikernel.cpp.s
 
+tables/gdt.o: tables/gdt.cpp.o
+
+.PHONY : tables/gdt.o
+
+# target to build an object file
+tables/gdt.cpp.o:
+	$(MAKE) -f CMakeFiles/IbisOS.bin.dir/build.make CMakeFiles/IbisOS.bin.dir/tables/gdt.cpp.o
+.PHONY : tables/gdt.cpp.o
+
+tables/gdt.i: tables/gdt.cpp.i
+
+.PHONY : tables/gdt.i
+
+# target to preprocess a source file
+tables/gdt.cpp.i:
+	$(MAKE) -f CMakeFiles/IbisOS.bin.dir/build.make CMakeFiles/IbisOS.bin.dir/tables/gdt.cpp.i
+.PHONY : tables/gdt.cpp.i
+
+tables/gdt.s: tables/gdt.cpp.s
+
+.PHONY : tables/gdt.s
+
+# target to generate assembly for a file
+tables/gdt.cpp.s:
+	$(MAKE) -f CMakeFiles/IbisOS.bin.dir/build.make CMakeFiles/IbisOS.bin.dir/tables/gdt.cpp.s
+.PHONY : tables/gdt.cpp.s
+
+tables/idt.o: tables/idt.cpp.o
+
+.PHONY : tables/idt.o
+
+# target to build an object file
+tables/idt.cpp.o:
+	$(MAKE) -f CMakeFiles/IbisOS.bin.dir/build.make CMakeFiles/IbisOS.bin.dir/tables/idt.cpp.o
+.PHONY : tables/idt.cpp.o
+
+tables/idt.i: tables/idt.cpp.i
+
+.PHONY : tables/idt.i
+
+# target to preprocess a source file
+tables/idt.cpp.i:
+	$(MAKE) -f CMakeFiles/IbisOS.bin.dir/build.make CMakeFiles/IbisOS.bin.dir/tables/idt.cpp.i
+.PHONY : tables/idt.cpp.i
+
+tables/idt.s: tables/idt.cpp.s
+
+.PHONY : tables/idt.s
+
+# target to generate assembly for a file
+tables/idt.cpp.s:
+	$(MAKE) -f CMakeFiles/IbisOS.bin.dir/build.make CMakeFiles/IbisOS.bin.dir/tables/idt.cpp.s
+.PHONY : tables/idt.cpp.s
+
+tables/isr.o: tables/isr.cpp.o
+
+.PHONY : tables/isr.o
+
+# target to build an object file
+tables/isr.cpp.o:
+	$(MAKE) -f CMakeFiles/IbisOS.bin.dir/build.make CMakeFiles/IbisOS.bin.dir/tables/isr.cpp.o
+.PHONY : tables/isr.cpp.o
+
+tables/isr.i: tables/isr.cpp.i
+
+.PHONY : tables/isr.i
+
+# target to preprocess a source file
+tables/isr.cpp.i:
+	$(MAKE) -f CMakeFiles/IbisOS.bin.dir/build.make CMakeFiles/IbisOS.bin.dir/tables/isr.cpp.i
+.PHONY : tables/isr.cpp.i
+
+tables/isr.s: tables/isr.cpp.s
+
+.PHONY : tables/isr.s
+
+# target to generate assembly for a file
+tables/isr.cpp.s:
+	$(MAKE) -f CMakeFiles/IbisOS.bin.dir/build.make CMakeFiles/IbisOS.bin.dir/tables/isr.cpp.s
+.PHONY : tables/isr.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -223,6 +331,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... IbisOS.bin"
 	@echo "... boot/boot.o"
+	@echo "... boot/gdt.o"
+	@echo "... boot/idt.o"
+	@echo "... boot/interrupt.o"
 	@echo "... memcpy/memcpy.o"
 	@echo "... memcpy/memcpy.i"
 	@echo "... memcpy/memcpy.s"
@@ -232,6 +343,15 @@ help:
 	@echo "... minikernel/minikernel.o"
 	@echo "... minikernel/minikernel.i"
 	@echo "... minikernel/minikernel.s"
+	@echo "... tables/gdt.o"
+	@echo "... tables/gdt.i"
+	@echo "... tables/gdt.s"
+	@echo "... tables/idt.o"
+	@echo "... tables/idt.i"
+	@echo "... tables/idt.s"
+	@echo "... tables/isr.o"
+	@echo "... tables/isr.i"
+	@echo "... tables/isr.s"
 .PHONY : help
 
 

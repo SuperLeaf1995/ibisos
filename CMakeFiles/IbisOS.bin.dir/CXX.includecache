@@ -17,6 +17,24 @@ memset/memset.h
 /media/Projects/IbisOS/src/minikernel/minikernel.cpp
 malloc/malloc.h
 -
+system.h
+-
+
+/media/Projects/IbisOS/src/tables/gdt.cpp
+tables/gdt.h
+-
+memset/memset.h
+-
+
+/media/Projects/IbisOS/src/tables/idt.cpp
+tables/idt.h
+-
+memset/memset.h
+-
+
+/media/Projects/IbisOS/src/tables/isr.cpp
+tables/isr.h
+-
 
 src/include/malloc/malloc.h
 stddef.h
@@ -31,4 +49,16 @@ stddef.h
 -
 
 src/include/stddef.h
+
+src/include/system.h
+tables/gdt.h
+-
+tables/idt.h
+-
+
+src/include/tables/gdt.h
+
+src/include/tables/idt.h
+
+src/include/tables/isr.h
 

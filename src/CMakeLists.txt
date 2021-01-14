@@ -10,6 +10,7 @@ enable_language(ASM_NASM)
 file(GLOB LINKER_SCRIPT "boot/linker.ld")
 file(GLOB_RECURSE CXX_SOURCE "*.cpp")
 file(GLOB_RECURSE ASM_NASM_SOURCE "*.asm")
+file(GLOB_RECURSE ASM_SOURCE ".s")
 
 set(TARGET_ARCH $ENV{TARGET_ARCH})
 set(TARGET_BUILD $ENV{TARGET_BUILD})
@@ -24,7 +25,7 @@ set(CMAKE_CXX_FLAGS "-ffreestanding -O2 -Wall -fno-exceptions -fno-rtti -nostdli
 set(CMAKE_ASM_NASM_OBJECT_FORMAT "elf32")
 set(CMAKE_ASM_NASM_COMPILE_OBJECT "<CMAKE_ASM_NASM_COMPILER> -f ${CMAKE_ASM_NASM_OBJECT_FORMAT} -o <OBJECT> <SOURCE>")
 
-add_executable(${PROJECT_NAME}.bin ${CXX_SOURCE} ${ASM_NASM_SOURCE})
+add_executable(${PROJECT_NAME}.bin ${CXX_SOURCE} ${ASM_SOURCE} ${ASM_NASM_SOURCE} )
 
 set_target_properties(${PROJECT_NAME}.bin PROPERTIES LINK_FLAGS "-T ${LINKER_SCRIPT}")
 
