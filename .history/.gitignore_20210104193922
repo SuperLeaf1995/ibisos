@@ -2,6 +2,7 @@ libs/
 assets/
 output/
 .vscode/
+.history/
 CMakeCache.txt
 cmake_install.cmake
 CMakeFiles/

@@ -1,3 +1,0 @@
-/media/Projects/IbisOS/CMakeFiles/rebuild_cache.dir
-/media/Projects/IbisOS/CMakeFiles/edit_cache.dir
-/media/Projects/IbisOS/CMakeFiles/IbisOS.bin.dir
