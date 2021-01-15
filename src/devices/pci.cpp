@@ -4,13 +4,31 @@
 #include <malloc/malloc.h>
 #include <sys/portio.hpp>
 //A list of all discovered pci devices
-pci_device **discovered_devices;
+pci_device_table discovered_devices[256];
 uint32_t discovered_device_count = 0;
+
+pci_device* get_discovered_device(uint16_t vendor_id, uint16_t device_id)
+{
+    //Loop through the discovered devices
+    for(int idx = 0; idx < discovered_device_count; idx++)
+    {
+        //Get PCI device at idx
+        pci_device *device = discovered_devices[idx].device;
+        //Get device vendor
+        uint16_t device_vendor_id = device->vendor;
+        //Check if vendor id match
+        if(vendor_id == device_vendor_id)
+            //Return the device
+            return device;
+    }
+    
+    return NULL;
+}
 
 void register_pci_device(pci_device* device)
 {
     //Add the device
-    discovered_devices[discovered_device_count] = device;
+    discovered_devices[discovered_device_count].device = device;
     //Update device count
     discovered_device_count++;
 }
@@ -57,8 +75,6 @@ uint16_t pci_get_device(uint16_t bus, uint16_t slot, uint16_t function)
 
 void initialize_pci_devices()
 {
-    //Set the devices
-    discovered_devices = (pci_device**) malloc(sizeof(pci_device));
     //Loop through all 256 potential busses
     for(uint32_t bus = 0; bus < 256; bus++)
     {

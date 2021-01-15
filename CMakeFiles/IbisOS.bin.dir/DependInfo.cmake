@@ -28,10 +28,13 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
   )
 set(CMAKE_DEPENDS_CHECK_CXX
   "/media/Projects/IbisOS/src/devices/pci.cpp" "/media/Projects/IbisOS/CMakeFiles/IbisOS.bin.dir/devices/pci.cpp.o"
+  "/media/Projects/IbisOS/src/graphics/graphics.cpp" "/media/Projects/IbisOS/CMakeFiles/IbisOS.bin.dir/graphics/graphics.cpp.o"
   "/media/Projects/IbisOS/src/malloc/malloc.cpp" "/media/Projects/IbisOS/CMakeFiles/IbisOS.bin.dir/malloc/malloc.cpp.o"
+  "/media/Projects/IbisOS/src/math.cpp" "/media/Projects/IbisOS/CMakeFiles/IbisOS.bin.dir/math.cpp.o"
   "/media/Projects/IbisOS/src/memcpy/memcpy.cpp" "/media/Projects/IbisOS/CMakeFiles/IbisOS.bin.dir/memcpy/memcpy.cpp.o"
   "/media/Projects/IbisOS/src/memset/memset.cpp" "/media/Projects/IbisOS/CMakeFiles/IbisOS.bin.dir/memset/memset.cpp.o"
   "/media/Projects/IbisOS/src/minikernel/minikernel.cpp" "/media/Projects/IbisOS/CMakeFiles/IbisOS.bin.dir/minikernel/minikernel.cpp.o"
+  "/media/Projects/IbisOS/src/storage/ata.cpp" "/media/Projects/IbisOS/CMakeFiles/IbisOS.bin.dir/storage/ata.cpp.o"
   "/media/Projects/IbisOS/src/tables/gdt.cpp" "/media/Projects/IbisOS/CMakeFiles/IbisOS.bin.dir/tables/gdt.cpp.o"
   "/media/Projects/IbisOS/src/tables/idt.cpp" "/media/Projects/IbisOS/CMakeFiles/IbisOS.bin.dir/tables/idt.cpp.o"
   "/media/Projects/IbisOS/src/tables/isr.cpp" "/media/Projects/IbisOS/CMakeFiles/IbisOS.bin.dir/tables/isr.cpp.o"

@@ -186,6 +186,33 @@ devices/pci.cpp.s:
 	$(MAKE) -f CMakeFiles/IbisOS.bin.dir/build.make CMakeFiles/IbisOS.bin.dir/devices/pci.cpp.s
 .PHONY : devices/pci.cpp.s
 
+graphics/graphics.o: graphics/graphics.cpp.o
+
+.PHONY : graphics/graphics.o
+
+# target to build an object file
+graphics/graphics.cpp.o:
+	$(MAKE) -f CMakeFiles/IbisOS.bin.dir/build.make CMakeFiles/IbisOS.bin.dir/graphics/graphics.cpp.o
+.PHONY : graphics/graphics.cpp.o
+
+graphics/graphics.i: graphics/graphics.cpp.i
+
+.PHONY : graphics/graphics.i
+
+# target to preprocess a source file
+graphics/graphics.cpp.i:
+	$(MAKE) -f CMakeFiles/IbisOS.bin.dir/build.make CMakeFiles/IbisOS.bin.dir/graphics/graphics.cpp.i
+.PHONY : graphics/graphics.cpp.i
+
+graphics/graphics.s: graphics/graphics.cpp.s
+
+.PHONY : graphics/graphics.s
+
+# target to generate assembly for a file
+graphics/graphics.cpp.s:
+	$(MAKE) -f CMakeFiles/IbisOS.bin.dir/build.make CMakeFiles/IbisOS.bin.dir/graphics/graphics.cpp.s
+.PHONY : graphics/graphics.cpp.s
+
 malloc/malloc.o: malloc/malloc.cpp.o
 
 .PHONY : malloc/malloc.o
@@ -212,6 +239,33 @@ malloc/malloc.s: malloc/malloc.cpp.s
 malloc/malloc.cpp.s:
 	$(MAKE) -f CMakeFiles/IbisOS.bin.dir/build.make CMakeFiles/IbisOS.bin.dir/malloc/malloc.cpp.s
 .PHONY : malloc/malloc.cpp.s
+
+math.o: math.cpp.o
+
+.PHONY : math.o
+
+# target to build an object file
+math.cpp.o:
+	$(MAKE) -f CMakeFiles/IbisOS.bin.dir/build.make CMakeFiles/IbisOS.bin.dir/math.cpp.o
+.PHONY : math.cpp.o
+
+math.i: math.cpp.i
+
+.PHONY : math.i
+
+# target to preprocess a source file
+math.cpp.i:
+	$(MAKE) -f CMakeFiles/IbisOS.bin.dir/build.make CMakeFiles/IbisOS.bin.dir/math.cpp.i
+.PHONY : math.cpp.i
+
+math.s: math.cpp.s
+
+.PHONY : math.s
+
+# target to generate assembly for a file
+math.cpp.s:
+	$(MAKE) -f CMakeFiles/IbisOS.bin.dir/build.make CMakeFiles/IbisOS.bin.dir/math.cpp.s
+.PHONY : math.cpp.s
 
 memcpy/memcpy.o: memcpy/memcpy.cpp.o
 
@@ -293,6 +347,33 @@ minikernel/minikernel.s: minikernel/minikernel.cpp.s
 minikernel/minikernel.cpp.s:
 	$(MAKE) -f CMakeFiles/IbisOS.bin.dir/build.make CMakeFiles/IbisOS.bin.dir/minikernel/minikernel.cpp.s
 .PHONY : minikernel/minikernel.cpp.s
+
+storage/ata.o: storage/ata.cpp.o
+
+.PHONY : storage/ata.o
+
+# target to build an object file
+storage/ata.cpp.o:
+	$(MAKE) -f CMakeFiles/IbisOS.bin.dir/build.make CMakeFiles/IbisOS.bin.dir/storage/ata.cpp.o
+.PHONY : storage/ata.cpp.o
+
+storage/ata.i: storage/ata.cpp.i
+
+.PHONY : storage/ata.i
+
+# target to preprocess a source file
+storage/ata.cpp.i:
+	$(MAKE) -f CMakeFiles/IbisOS.bin.dir/build.make CMakeFiles/IbisOS.bin.dir/storage/ata.cpp.i
+.PHONY : storage/ata.cpp.i
+
+storage/ata.s: storage/ata.cpp.s
+
+.PHONY : storage/ata.s
+
+# target to generate assembly for a file
+storage/ata.cpp.s:
+	$(MAKE) -f CMakeFiles/IbisOS.bin.dir/build.make CMakeFiles/IbisOS.bin.dir/storage/ata.cpp.s
+.PHONY : storage/ata.cpp.s
 
 sys/portio.o: sys/portio.c.o
 
@@ -445,9 +526,15 @@ help:
 	@echo "... devices/pci.o"
 	@echo "... devices/pci.i"
 	@echo "... devices/pci.s"
+	@echo "... graphics/graphics.o"
+	@echo "... graphics/graphics.i"
+	@echo "... graphics/graphics.s"
 	@echo "... malloc/malloc.o"
 	@echo "... malloc/malloc.i"
 	@echo "... malloc/malloc.s"
+	@echo "... math.o"
+	@echo "... math.i"
+	@echo "... math.s"
 	@echo "... memcpy/memcpy.o"
 	@echo "... memcpy/memcpy.i"
 	@echo "... memcpy/memcpy.s"
@@ -457,6 +544,9 @@ help:
 	@echo "... minikernel/minikernel.o"
 	@echo "... minikernel/minikernel.i"
 	@echo "... minikernel/minikernel.s"
+	@echo "... storage/ata.o"
+	@echo "... storage/ata.i"
+	@echo "... storage/ata.s"
 	@echo "... sys/portio.o"
 	@echo "... sys/portio.i"
 	@echo "... sys/portio.s"

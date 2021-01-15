@@ -1,6 +1,9 @@
 #ifndef ATA_H
 #define ATA_H
 #include <stdint.h>
+//PCI info for ATA drives
+#define VENDOR_ID       0x8086
+#define DEVICE_ID       0x7010
 //Drive bus information
 #define PRIMARY_BUS     0x00
 #define SECONDARY_BUS   0x01
@@ -78,8 +81,8 @@ typedef struct
     //I/O for ata drive
     uint16_t io;
     //Read function
-    uint8_t (*read)(uint8_t* buffer, uint32_t lba, uint32_t sector_count, ata_drive* drive);
+    uint8_t (*read)(uint8_t* buffer, uint32_t lba, uint32_t sector_count, void* drive);
     //Write function
-    uint8_t (*write)(uint8_t* buffer, uint32_t offset, uint32_t buffer_size, ata_drive* drive);
+    uint8_t (*write)(uint8_t* buffer, uint32_t offset, uint32_t buffer_size, void* drive);
 } ata_drive;
 #endif

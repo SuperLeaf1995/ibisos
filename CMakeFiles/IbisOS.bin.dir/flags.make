@@ -10,13 +10,13 @@ ASM_NASM_DEFINES =
 
 ASM_NASM_INCLUDES = -I/media/Projects/IbisOS/src/include 
 
-C_FLAGS = -ffreestanding -O2 -Wall --target=i386-pc-none-elf -march=i386   -std=gnu99
+C_FLAGS = -ffreestanding -O2 -Wall --target=i686-pc-none-elf -march=i686   -std=gnu99
 
 C_DEFINES = 
 
 C_INCLUDES = -I/media/Projects/IbisOS/src/include 
 
-CXX_FLAGS = -ffreestanding -O2 -Wall -fno-exceptions -fno-rtti -nostdlib -nostdinc --target=i386-pc-none-elf -march=i386   -std=gnu++2a
+CXX_FLAGS = -ffreestanding -O2 -Wall -fno-exceptions -fno-rtti -nostdlib -nostdinc --target=i686-pc-none-elf -march=i686   -std=gnu++2a
 
 CXX_DEFINES = 
 

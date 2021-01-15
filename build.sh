@@ -3,14 +3,14 @@ rm -rf CMakeCache.txt CMakeFiles
 export OUTPUT_DIR=`pwd`/output
 if [ "$1" == "" ]
 then
-    export TARGET_BUILD="i386-pc-none-elf"
+    export TARGET_BUILD="i686-pc-none-elf"
 else
     export TARGET_BUILD="$1"
 fi
 
 if [ "$1" == "" ]
 then
-    export TARGET_ARCH="i386"
+    export TARGET_ARCH="i686"
 else
     export TARGET_ARCH="$1"
 fi

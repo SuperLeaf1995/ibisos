@@ -18,8 +18,18 @@ malloc/malloc.h
 sys/portio.hpp
 -
 
+/media/Projects/IbisOS/src/graphics/graphics.cpp
+graphics/graphics.h
+-
+
 /media/Projects/IbisOS/src/malloc/malloc.cpp
 malloc/malloc.h
+-
+
+/media/Projects/IbisOS/src/math.cpp
+math.h
+-
+stdint.h
 -
 
 /media/Projects/IbisOS/src/memcpy/memcpy.cpp
@@ -37,9 +47,15 @@ system.h
 -
 vesa/vesa.h
 -
+graphics/graphics.h
+-
 devices/pci.h
 -
 sys/portio.hpp
+-
+
+/media/Projects/IbisOS/src/storage/ata.cpp
+storage/ata.h
 -
 
 /media/Projects/IbisOS/src/tables/gdt.cpp
@@ -59,15 +75,27 @@ tables/isr.h
 -
 
 /media/Projects/IbisOS/src/vesa/vesa.cpp
+malloc/malloc.h
+-
 vesa/vesa.h
+-
+math.h
 -
 
 src/include/devices/pci.h
 sys/portio.hpp
 -
 
+src/include/graphics/graphics.h
+vesa/vesa.h
+-
+
 src/include/malloc/malloc.h
 stddef.h
+-
+
+src/include/math.h
+stdint.h
 -
 
 src/include/memcpy/memcpy.h
@@ -81,6 +109,10 @@ stddef.h
 src/include/stddef.h
 
 src/include/stdint.h
+
+src/include/storage/ata.h
+stdint.h
+-
 
 src/include/sys/portio.hpp
 stdint.h
