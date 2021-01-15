@@ -1,6 +1,6 @@
 #include <graphics/graphics.h>
 
-void draw_circle(uint32_t* buffer, int xc, int yc, int x, int y, uint32_t color)
+void __draw_circle(uint32_t* buffer, int xc, int yc, int x, int y, uint32_t color)
 {
     draw_pixel(buffer, xc + x, yc + y, color);
     draw_pixel(buffer, xc - x, yc + y, color);
@@ -15,7 +15,7 @@ void draw_circle(uint32_t* buffer, int x_center, int y_center, int r, uint32_t c
 {
     int x = 0, y = r, d = 3 - (2 * r);
     //Draw an initial circle
-    draw_circle(buffer, x_center, y_center, x, y, color);
+    __draw_circle(buffer, x_center, y_center, x, y, color);
     while(y >= x)
     {
         //Add one to x
@@ -32,6 +32,6 @@ void draw_circle(uint32_t* buffer, int x_center, int y_center, int r, uint32_t c
             //Multiply x and 4, add d, add 6
             d = d + 4 * x + 6;
         //Draw the circle again
-        draw_circle(buffer, x_center, y_center, x, y, color);
+        __draw_circle(buffer, x_center, y_center, x, y, color);
     }
 }
