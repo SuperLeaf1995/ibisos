@@ -1,15 +1,16 @@
+#include <malloc/malloc.h>
 #include <vesa/vesa.h>
+#include <math.h>
 struct vesa_mode_info vesa_mode[1];
-extern "C" char _binary_assets_wallpaper_start;
-extern "C" char _binary_assets_wallpaper_end;
-extern "C" char _binary_assets_wallpaper_size;
+
 void draw_pixel(uint32_t *framebuffer, int x, int y, uint32_t color)
 {
-    unsigned index = x * 3 + y * 3200;
+    unsigned index = y * vesa_mode[0].height + x;
     framebuffer[index] = color;
     framebuffer[index + 1] = color;
     framebuffer[index + 2] = color;
 }
+
 
 void init_vesa(unsigned int* multiboot_header)
 {
@@ -24,12 +25,13 @@ void init_vesa(unsigned int* multiboot_header)
     //Set the bpp
     vesa_mode[0].bpp = multiboot_header[26];
     //Now loop and paint red
-    for(int y = 0; y < vesa_mode[0].height; y++)
+    for(int x = 0; x < vesa_mode[0].width; x++)
     {
-        for(int x = 0; x < vesa_mode[0].width; x++)
+        for(int y = 0; y < vesa_mode[0].height; y++)
         {
             //Draw a pixel
-            draw_pixel(vesa_mode[0].framebuffer, x, y, 0x093951);
+            draw_pixel(vesa_mode[0].framebuffer, x, y, 0x992040);
         }
     }
+
 }

@@ -6,8 +6,9 @@ SECTIONS
     . = 1M;
     .text BLOCK(4K) : ALIGN(4K)
     {
+        . = ALIGN(8);
+        KEEP(*(.multiboot))
         *(.text)
-        *(.multiboot)
     }
 
     .rodata BLOCK(4K) : ALIGN(4K)
